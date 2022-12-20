@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Lab-6</title>
+</head>
+<body>
+    <h1>Click Me to reload</h1>
+
+<script>
+    function add(a,b) { return a+b };
+
+    alert(add(3,8));
+    
+    //Implementation of Window object
+    document.querySelector("h1").addEventListener('click', ()=> window.location.reload());
+    
+    //Changing Status-bar content on mousehover
+    document.querySelector("h1").addEventListener('mouseover', ()=> window.status = "Hello");
+</script>
+</body>
+
+
+</html>

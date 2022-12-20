@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Lab-8</title>
+    </head>
+    <body>
+        <label>Enter the no.</label>
+        <input type="text" id="num">
+        <button>Calculate</button>
+        <br>
+
+    <script>
+
+        //printing tables
+        document.querySelector("button").addEventListener('click', ()=> {
+            const num = document.querySelector("#num").value;
+            for(var i=1; i<=10; i++) {
+                console.log(`${num} X ${i} = ${num*i}`);
+            }
+        });
+
+        //sum of first 10 numbers
+        var sum =0;
+        for(var i=1; i<=10; i++) {
+            sum+=i;
+        }
+        console.log(`Sum of first 10 numbers is ${sum}`);
+
+        //fibonnaci series function
+        function fibbo(n) {
+            var series = []
+            var a=0;
+            var b=1;
+            for(var i=0; i<n; i++) {
+                series.push(b);
+                const temp = b;
+                b = a+b;
+                a = temp;    
+            }            
+            return series;
+        }
+        console.log(fibbo(10));
+    </script>
+    </body>
+</html>

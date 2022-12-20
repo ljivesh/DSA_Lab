@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Lab-5</title>
+    </head>
+    <body>
+        <label>Enter 1st num</label>
+        <input type="text" id="num1"> <br>
+        <label>Enter 2nd num</label>
+        <input type="text" id="num2"> <br>
+        <button id="op1">+</button>
+        <button id="op2">-</button>
+        <button id="op3">*</button>
+        <button id="op4">/</button>
+    
+    <script>
+        document.querySelector('#op1').addEventListener('click', () => {
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
+            console.log(`${num1} + ${num2} = ${num1+num2} `);
+        });
+        document.querySelector('#op2').addEventListener('click', () => {
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
+            console.log(`${num1} - ${num2} = ${num1-num2} `);
+        });
+        document.querySelector('#op3').addEventListener('click', () =>  {
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
+            console.log(`${num1} * ${num2} = ${num1*num2} `);
+        });
+        document.querySelector('#op4').addEventListener('click', () => {
+            num1 = document.getElementById("num1").value;
+            num2 = document.getElementById("num2").value;
+            if(num2!==0) console.log(`${num1} / ${num2} = ${num1/num2} `)
+            else console.log("Error");
+        });
+
+        var a = 10;
+        var b = 6;
+        console.log(`Before Swapping: a is ${a} and b is ${b}`);
+
+        //Swapping a and b
+        var temp = a;
+        a = b;
+        b = temp;
+        console.log(`After Swapping: a is ${a} and b is ${b}`);
+
+
+        
+
+        </script>
+    </body>
+</html>
